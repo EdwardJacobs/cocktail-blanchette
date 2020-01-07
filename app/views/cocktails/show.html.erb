@@ -1,12 +1,12 @@
 <div class="container">
   <h1><%= @cocktail.name %></h1>
-  <%= link_to 'Back to All Cocktails', cocktails_path, class: 'btn btn-primary' %>
+  <%= link_to 'Back to All Cocktails', root_path %>
 
   <% @cocktail.doses.each do |dose| %>
-  <tr>
-    <td><%= dose.ingredient.name %></td>
-    <td><%= dose.description %></td>
-  </tr>
+
+    <p><%= dose.ingredient.name %></p>
+    <p><%= dose.description %></p>
+
   <% end %>
 </div>
 
