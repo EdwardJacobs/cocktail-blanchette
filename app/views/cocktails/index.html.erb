@@ -1,10 +1,19 @@
 <h1>Cocktail Blanchette</h1>
+<p>Awesome beverages for a developer's nightlife</p>
+<%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-primary" %>
 
-<% @cocktails.each do |cocktail| %>
-<p><%= link_to cocktail.name, cocktail_path(cocktail.id) %></p>
-<% end %>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-12 col-md-6 col-lg-3">
+      <h2><%= cocktail.name %></h2>
+      <p><%= link_to "description", cocktail_path(cocktail.id) %></p>
+    </div>
+    <% end %>
+  </div>
+</div>
 
-<%= link_to "Add a Cocktail", cocktails_new_path, class: "btn btn-primary" %>
+
 <!-- app/views/articles/index.html.erb -->
 
 <!-- for face detection -->
