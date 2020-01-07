@@ -1,20 +1,24 @@
-<h1>Cocktail Blanchette</h1>
-<p>Awesome beverages for a developer's nightlife</p>
-<%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-primary" %>
+<div class="banner" style="background-image: url('<%= image_path 'bar.jpg' %>');">
+  <div class="banner-content">
+    <h1>Cocktail Blanchette</h1>
+    <p>Awesome beverages for a developer's nightlife</p>
+    <%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-primary" %>
+  </div>
+</div>
 
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
-    <div class="col-12 col-md-6 col-lg-3">
-      <h2><%= cocktail.name %></h2>
-      <p><%= link_to "description", cocktail_path(cocktail.id) %></p>
-    </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+          <div class="card-description">
+            <h2><%= cocktail.name %></h2>
+          </div>
+          <p><%= link_to "", cocktail_path(cocktail.id), class: 'card-link' %></p>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>
-
-
 <!-- app/views/articles/index.html.erb -->
-
 <!-- for face detection -->
-
