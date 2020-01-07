@@ -1,0 +1,11 @@
+<h1>Cocktail Blanchette</h1>
+
+<% @cocktails.each do |cocktail| %>
+<p><%= link_to cocktail.name, cocktail_path(cocktail.id) %></p>
+<% end %>
+
+<%= link_to "Add a Cocktail", cocktails_new_path, class: "btn btn-primary" %>
+<!-- app/views/articles/index.html.erb -->
+
+<!-- for face detection -->
+
