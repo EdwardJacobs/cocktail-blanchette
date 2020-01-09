@@ -1,11 +1,14 @@
 .card {
   height: 300px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background: no-repeat center;
   background-size: cover !important;
-  background-position: center;
+  overflow: hidden;
   color: white;
   position: relative;
-  margin: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 .card-description {
   position: absolute;
