@@ -1,12 +1,14 @@
 .logo {
-  letter-spacing: 2px;
+  font-family: $cocktail-font;
+  letter-spacing: 1px;
   color: #000;
   margin: 0;
 }
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: $light-gray;
+  background: #E6E6E6;
+  height: 70px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -20,7 +22,7 @@
 .btn-flat {
   color: white;
   padding: 8px 24px;
-  border-radius: 4px;
+  border-radius: 50px;
   background: #000000;
   transition: background 0.3s ease;
 }
