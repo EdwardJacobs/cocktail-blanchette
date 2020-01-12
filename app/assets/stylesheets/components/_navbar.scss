@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900i&display=swap');
+
 .logo {
-  font-family: $cocktail-font;
-  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
   color: #000;
   margin: 0;
 }
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: #E6E6E6;
-  height: 70px;
+  background: $light-gray;
+  padding: 8px 25px;
+  border-bottom: 1px solid rgba(110, 119, 127, 0.1);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -19,15 +27,3 @@
   width: 40px;
 }
 
-.btn-flat {
-  color: white;
-  padding: 8px 24px;
-
-  background: #000000;
-  transition: background 0.3s ease;
-}
-
-.btn-flat:hover {
-  background: #000000;
-  color: white;
-}
