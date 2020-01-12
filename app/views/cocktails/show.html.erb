@@ -6,29 +6,22 @@
 
 <div class="container">
 
-  <div class="row">
+  <div class="row d-flex justify-content-between">
     <div class="col-sm-12 col-md-6">
       <h3>Recipe</h3>
-      <table class="table table-bordered">
-        <tbody>
-          <thead>
-            <th>Ingredient</th>
-            <th>Description</th>
-            <th>Remove</th>
-          </thead>
-          <% @cocktail.doses.each do |dose| %>
-            <tr>
-              <td><%= dose.ingredient.name %></td>
-              <td><%= dose.description %></td>
-              <td class="text-center">
-                <%= link_to dose_path(dose), method: :delete, data: {confirm: "Are you sure?"} do %>
-                  <i class="fa fa-trash destroy_dose" style="color: black"></i>
-                <% end %>
-              </td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
+      <% @cocktail.doses.each do |dose| %>
+        <div>
+
+          <div class="col-md-8 d-flex justify-content-between p-0">
+            <p><%= dose.description %></p>
+            <p><%= dose.ingredient.name %></p>
+            <%= link_to dose_path(dose), method: :delete, data: {confirm: "Are you sure?"} do %>
+            <i class="fa fa-trash destroy_dose" style="color: black"></i>
+            <% end %>
+          </div>
+
+        </div>
+      <% end %>
     </div>
     <div class="col-sm-12 col-md-6">
       <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
