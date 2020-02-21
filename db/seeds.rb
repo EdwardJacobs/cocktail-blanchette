@@ -11,7 +11,7 @@ require 'json'
 puts "Destroy ingredients"
 Ingredient.destroy_all if Rails.env.development?
 
-puts "Destroy Cocktails"
+puts "Destroy cocktails"
 Cocktail.destroy_all if Rails.env.development?
 
 puts "Create ingredients"
