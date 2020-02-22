@@ -1,5 +1,5 @@
 .card {
-  height: 200px;
+  height: 300px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background: no-repeat center;
   background-size: cover !important;
@@ -13,11 +13,13 @@
 }
 .card-description {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   left: 10px;
 }
 .card-description h2 {
+  font-family: $headers-font;
   font-size: 24px;
+  font-weight: bold;
 }
 .card-link {
   position: absolute;

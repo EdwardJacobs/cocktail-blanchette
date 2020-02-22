@@ -1,23 +1,25 @@
-<div class="banner-main" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(assets/splash.jpg);">
+<div class="banner-main" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(assets/splash.jpg)">
   <div class="container">
     <h1>Cocktail Blanchette</h1>
-    <div class="row">
-      <% @cocktails.each do |cocktail| %>
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <% if cocktail.photo? %>
-            <% background_url = cl_image_path cocktail.photo, width: 400, height: 500, crop: :fill %>
-          <% else %>
-            <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
-          <% end %>
-          <div class="card text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>');">
-            <div class="card-description text-center">
-              <h2><%= cocktail.name %></h2>
-            </div>
-            <p><%= link_to "", cocktail_path(cocktail.id), class: 'card-link' %></p>
+  </div>
+</div>
+<div class="container mx-3">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <% if cocktail.photo? %>
+          <% background_url = cl_image_path cocktail.photo, width: 400, height: 500, crop: :fill %>
+        <% else %>
+          <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
+        <% end %>
+        <div class="card text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>');">
+          <div class="card-description text-center">
+            <h2><%= cocktail.name %></h2>
           </div>
+          <p><%= link_to "", cocktail_path(cocktail.id), class: 'card-link' %></p>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
 </div>
 <!-- app/views/articles/index.html.erb -->
