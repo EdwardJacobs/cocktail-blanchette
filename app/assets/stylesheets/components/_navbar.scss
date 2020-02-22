@@ -4,13 +4,13 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
-  color: #000;
+  color: $white;
   margin: 0;
 }
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: $light-gray;
+  background: black;
   padding: 8px 25px;
   border-bottom: 1px solid rgba(110, 119, 127, 0.1);
   position: sticky;
