@@ -1,15 +1,18 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <h1 class="mt-4 font-weight-bold text-center">Build your cocktail</h1>
+      <h1 class="my-5 font-weight-bold text-center" style="color: white">Build your cocktail</h1>
       <%= simple_form_for [@cocktail] do |f| %>
         <%= f.input :name %>
         <%= f.input :photo, as: :file %>
         <%= f.input :photo_cache, as: :hidden %>
-        <%= f.button :submit, class: 'btn btn-flat' %>
+        <%= f.button :submit, class: 'btn btn-gradient w-100 mt-3' %>
       <% end %>
     </div>
   </div>
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
 

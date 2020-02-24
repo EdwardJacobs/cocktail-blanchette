@@ -14,7 +14,7 @@
         <% end %>
 
           <div data-aos="zoom-out-up" class="card text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= background_url %>');">
-            <div class="card-description text-center">
+            <div class="card-description text-center" style="font-weight: bold">
               <h2><%= cocktail.name %></h2>
             </div>
             <p><%= link_to "", cocktail_path(cocktail.id), class: 'card-link' %></p>

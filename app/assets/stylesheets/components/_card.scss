@@ -11,16 +11,19 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
   justify-content: center;
 }
+
 .card-description {
   position: absolute;
   top: 10px;
   left: 10px;
 }
+
 .card-description h2 {
   font-family: $headers-font;
   font-size: 24px;
   font-weight: bold;
 }
+
 .card-link {
   position: absolute;
   top: 0;
@@ -31,6 +34,7 @@
   background: black;
   opacity: 0;
 }
+
 .card-link:hover {
   opacity: 0.1;
 }
