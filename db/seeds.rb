@@ -28,8 +28,8 @@ ingredients["drinks"].each do |ingredient|
   puts "create #{i.name}"
 end
 
-9.times do
-  puts "Starting created!"
+15.times do
+  puts "Create cocktails!"
   name = drink_list.sample
   cocktail = Cocktail.create(name: name)
   url = "https://source.unsplash.com/random?cocktail"
