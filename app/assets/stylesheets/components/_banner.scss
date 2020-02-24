@@ -55,8 +55,8 @@ body {
   font-family: $cocktail-font;
   font-weight: 700;
   letter-spacing: 2px;
-  font-size: 4.5rem;
-  margin-bottom: 200px;
+  font-size: 3rem;
+  margin-bottom: 24px;
 }
 
 h3 {
@@ -67,5 +67,9 @@ h3 {
 @media screen and (min-width: 768px) {
   .banner {
     height: 40vh;
+  }
+
+  .container > h1 {
+    font-size: 4.5rem;
   }
 }
